@@ -1,45 +1,45 @@
 $(document).ready(function(){
-  // function getUserCity() {
-  //   return new Promise((resolve, reject) => {
-  //       fetch('https://api.ipify.org?format=json')
-  //       .then(res => res.json())
-  //       .then(({ ip }) => {
-  //         fetch(
-  //         `https://suggestions.dadata.ru/suggestions/api/4_1/rs/iplocate/address?ip=${ip}&token=f1ac81250cfced23efe8eb6ac2958b00310efb99-`
-  //         )
-  //         .then(res => res.json())
-  //         .then(json => {
-  //             if (
-  //             {}.hasOwnProperty.call(json, 'family') &&
-  //             json.family.toLowerCase().indexOf('err')
-  //             ) {
-  //             return reject(json);
-  //             }
-  //             const {
-  //             location: {
-  //               data: { city },
-  //             },
-  //             } = json;
-  //             resolve({ city, ip });
-  //         });
-  //     });
-  // });
-  // }
-  // getUserCity()
-  // .then(({ city }) => {
-  //   $('.modal__geo').addClass('active');
-  //   $('.modal__geo_header').html(`Ваш город ${city}?`);
-  //   $('.modal__geo_button.correct').on('click', function() {
-  //     $('.modal__geo').removeClass('active');
-  //     getUserCity.innerHTML = city;
-  //     $('.header__city_link').html(`${city}`);
-  //   });
-  //   $('.header__city_link').html(`${city}`);
-  //   $('.modal__geo_button.other').on('click', function() {
-  //     $('.modal__geo').removeClass('active');
-  //     $('.modal').addClass('active');
-  //   });
-  // });
+  function getUserCity() {
+    return new Promise((resolve, reject) => {
+        fetch('https://api.ipify.org?format=json')
+        .then(res => res.json())
+        .then(({ ip }) => {
+          fetch(
+          `https://suggestions.dadata.ru/suggestions/api/4_1/rs/iplocate/address?ip=${ip}&token=f1ac81250cfced23efe8eb6ac2958b00310efb99-`
+          )
+          .then(res => res.json())
+          .then(json => {
+              if (
+              {}.hasOwnProperty.call(json, 'family') &&
+              json.family.toLowerCase().indexOf('err')
+              ) {
+              return reject(json);
+              }
+              const {
+              location: {
+                data: { city },
+              },
+              } = json;
+              resolve({ city, ip });
+          });
+      });
+  });
+  }
+  getUserCity()
+  .then(({ city }) => {
+    $('.modal__geo').addClass('active');
+    $('.modal__geo_header').html(`Ваш город ${city}?`);
+    $('.modal__geo_button.correct').on('click', function() {
+      $('.modal__geo').removeClass('active');
+      getUserCity.innerHTML = city;
+      $('.header__city_link').html(`${city}`);
+    });
+    $('.header__city_link').html(`${city}`);
+    $('.modal__geo_button.other').on('click', function() {
+      $('.modal__geo').removeClass('active');
+      $('.modal').addClass('active');
+    });
+  });
    $(".products__slider").slick({
       speed: 1200,
       prevArrow:
