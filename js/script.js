@@ -5,7 +5,7 @@ $(document).ready(function(){
         .then(res => res.json())
         .then(({ ip }) => {
           fetch(
-          `https://suggestions.dadata.ru/suggestions/api/4_1/rs/iplocate/address?ip=${ip}&token=f1ac81250cfced23efe8eb6ac2958b00310efb99-`
+          `https://suggestions.dadata.ru/suggestions/api/4_1/rs/iplocate/address?ip=${ip}&token=f1ac81250cfced23efe8eb6ac2958b00310efb99`
           )
           .then(res => res.json())
           .then(json => {
