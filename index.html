@@ -7,6 +7,7 @@
 <title>WESTSTYLE</title>
 <link rel="stylesheet" href="css/slick.css"/>
 <link rel="stylesheet" href="css/style.min.css">
+<link rel="stylesheet" href="css/fancybox.css">
 </head>
 <body><div class="body__overlay"></div><div class="body__overlay-2"></div><div class="header__overlay"></div>
 <header class="header">
@@ -215,8 +216,8 @@
       </ul>
       <div class="header__icon-burger">
         <div class="header__icon_wrapper header__icon_wrapper-1"><a href="search.html"><img src="icons/main_navbar/search.svg" alt="search"></a></div>
-        <div class="header__icon_wrapper header__icon_wrapper-2"><a href="#"><img src="icons/main_navbar/favourite.svg" alt="favourite"></a><span>1</span></div>
-        <div class="header__icon_wrapper header__icon_wrapper-3"><a href="#"><img src="icons/main_navbar/purchase.svg" alt="purchase"><span>0</span></a></div>
+        <div class="header__icon_wrapper header__icon_wrapper-2"><a data-fancybox href="#form_price"><img src="icons/main_navbar/favourite.svg" alt="favourite"></a><span>1</span></div>
+        <div class="header__icon_wrapper header__icon_wrapper-3"><a data-fancybox href="#form_cart"><img src="icons/main_navbar/purchase.svg" alt="purchase"><span>0</span></a></div>
       </div>
     </nav>
   </div>
@@ -1296,6 +1297,177 @@
     </div>
   </div>
 </div>
+<div style="display:none" id="form_price" class="modal-fancy">
+  <form class="modal__form-white"> 
+    <div class="modal__form-white-head-flex">Узнать цену<span data-fancybox-close="" class="modal__form-close"></span></div>
+    <div class="modal__form-white-flex">
+      <div class="modal__form-white_img"><img src="img/products/PRIME 5.jpg" alt="" class="modal__form-white_image"></div>
+      <div class="modal__form-white_desc">
+        <div class="modal__form-white_head">
+          Межкомнатная дверь PRIME 5
+        </div>
+        <ul class="modal__form-white_list">
+          <li class="modal__form-white_item">
+            <div class="modal__form-white_item-head">Покрытие:</div>
+            <div class="modal__form-white_item-desc">NCS S 6030-B</div>
+          </li>
+          <li class="modal__form-white_item">
+            <div class="modal__form-white_item-head">Количество створок:</div>
+            <div class="modal__form-white_item-desc">1</div>
+          </li>
+          <li class="modal__form-white_item">
+            <div class="modal__form-white_item-head">Оформление портала:</div>
+            <div class="modal__form-white_item-selects"><img src="img/products/PRIME 5.jpg" alt=""></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal__form-white_group">      
+      <input class="modal__form-white_input" placeholder="Имя*" type="text" required="">
+      <span class="modal__form-white_bar"></span>
+    </div>
+    <div class="modal__form-white_group">      
+      <input class="modal__form-white_input" type="tel" required="" placeholder="Номер телефона*" pattern="^\+7\d{3}\d{7}$" maxlength="12" onclick="value='+7'">
+      <span class="modal__form-white_bar"></span>
+    </div>
+      <button class="modal__form-white_btn">
+        Получить консультацию
+      </button>
+      <div class="modal__form-white_policy">
+        <a href="#">Нажимая на кнопку вы соглашаетесь<br>с Политикой обработки персональных данных</a>
+    </div>
+  </form>
+</div>
+<div style="display:none" id="form_cart" class="modal-fancy">
+  <form class="modal__form-white">
+    <div class="modal__form-white-head-flex">Корзина<span data-fancybox-close="" class="modal__form-close"></span></div>
+    <div class="modal__form-white-head-desc">3 товаров на сумму 110 997 ₽</div>
+    <div class="modal__form-white-flex">
+      <div class="modal__form-white_img"><img src="img/products/PRIME 5.jpg" alt="" class="modal__form-white_image"></div>
+      <div class="modal__form-white_desc">
+        <div class="modal__form-white_head">
+          Межкомнатная дверь PRIME 5<span></span>
+        </div>
+        <ul class="modal__form-white_list">
+          <li class="modal__form-white_item">
+            <div class="modal__form-white_item-head">Покрытие:</div>
+            <div class="modal__form-white_item-desc">NCS S 6030-B</div>
+          </li>
+          <li class="modal__form-white_item">
+            <div class="modal__form-white_item-head">Длина:</div>
+            <div class="modal__form-white_item-desc">200</div>
+          </li>
+          <li class="modal__form-white_item">
+            <div class="modal__form-white_item-head">Ширина:</div>
+            <div class="modal__form-white_item-desc">60</div>
+          </li>
+          <li class="modal__form-white_item">
+            <div class="modal__form-white_item-head">Высота:</div>
+            <div class="modal__form-white_item-desc">1800</div>
+          </li>
+          <li class="modal__form-white_item">
+            <div class="modal__form-white_item-head">Количество створок:</div>
+            <div class="modal__form-white_item-desc">1</div>
+          </li>
+          <li class="modal__form-white_item">
+            <div class="modal__form-white_item-head">Оформление портала:</div>
+            <div class="modal__form-white_item-selects"><img src="img/products/PRIME 5.jpg" alt=""></div>
+          </li>
+          <li class="modal__form-white_item">
+            <div class="modal__form-white_item-head">Цвет:</div>
+            <div class="modal__form-white_item-selects"><img src="img/products/prime_1.jpg" alt=""></div>
+          </li>
+        </ul>
+        <div class="modal__form-white_price-flex">
+          <div class="modal__form-white_price">
+            от 36 999 ₽ <span class="modal__form-white_price-strike">40 000 ₽</span> 
+          </div>
+          <div class="modal__form-plus-minus">
+            <input type="text" name="quantity" value="1">
+            <div class="inc qtybutton">-</div><div class="dec qtybutton">+</div><div class="modal__form-plus-minus-piece">шт</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal__form-white_divider"></div>
+    <div class="modal__form-white-flex">
+      <div class="modal__form-white_img"><img src="img/products/PRIME 5.jpg" alt="" class="modal__form-white_image"></div>
+      <div class="modal__form-white_desc">
+        <div class="modal__form-white_head">
+          Межкомнатная дверь PRIME 5<span></span>
+        </div>
+        <ul class="modal__form-white_list">
+          <li class="modal__form-white_item">
+            <div class="modal__form-white_item-head">Покрытие:</div>
+            <div class="modal__form-white_item-desc">NCS S 6030-B</div>
+          </li>
+          <li class="modal__form-white_item">
+            <div class="modal__form-white_item-head">Длина:</div>
+            <div class="modal__form-white_item-desc">200</div>
+          </li>
+          <li class="modal__form-white_item">
+            <div class="modal__form-white_item-head">Ширина:</div>
+            <div class="modal__form-white_item-desc">60</div>
+          </li>
+          <li class="modal__form-white_item">
+            <div class="modal__form-white_item-head">Высота:</div>
+            <div class="modal__form-white_item-desc">1800</div>
+          </li>
+          <li class="modal__form-white_item">
+            <div class="modal__form-white_item-head">Количество створок:</div>
+            <div class="modal__form-white_item-desc">1</div>
+          </li>
+          <li class="modal__form-white_item">
+            <div class="modal__form-white_item-head">Оформление портала:</div>
+            <div class="modal__form-white_item-selects"><img src="img/products/PRIME 5.jpg" alt=""></div>
+          </li>
+          <li class="modal__form-white_item">
+            <div class="modal__form-white_item-head">Цвет:</div>
+            <div class="modal__form-white_item-selects"><img src="img/products/prime_1.jpg" alt=""></div>
+          </li>
+        </ul>
+        <div class="modal__form-white_price-flex">
+          <div class="modal__form-white_price">
+            от 36 999 ₽ <span class="modal__form-white_price-strike">40 000 ₽</span> 
+          </div>
+          <div class="modal__form-plus-minus">
+            <input type="text" name="quantity" value="1">
+            <div class="inc qtybutton">-</div><div class="dec qtybutton">+</div><div class="modal__form-plus-minus-piece">шт</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal__form-white_divider"></div>
+    <div class="modal__form-white_group">
+      <input class="modal__form-white_input" placeholder="ФИО*" type="text" required="">
+      <span class="modal__form-white_bar"></span>
+    </div>
+    <div class="modal__form-white_group">
+      <input class="modal__form-white_input" type="tel" required="" placeholder="Телефон*" pattern="^\+7\d{3}\d{7}$" maxlength="12" onclick="value='+7'">
+      <span class="modal__form-white_bar"></span>
+    </div>
+    <div class="modal__form-white_group">
+      <input class="modal__form-white_input" placeholder="Email" type="email">
+      <span class="modal__form-white_bar"></span>
+    </div>
+    <div class="modal__form-white_group">
+      <input class="modal__form-white_input" placeholder="Адрес доставки" type="text">
+      <span class="modal__form-white_bar"></span>
+    </div>
+    <div class="modal__form-white_group-2">
+      <textarea class="modal__form-white_textarea" placeholder="Комментарии"></textarea>
+    </div>
+    <div class="modal__form-white_sum">
+      <span>Итого:</span> 110 997 ₽
+    </div>
+      <button class="modal__form-white_btn">
+        Оформить заказ
+      </button>
+      <div class="modal__form-white_policy">
+        <a href="#">Нажимая на кнопку вы соглашаетесь<br>с Политикой обработки персональных данных</a>
+    </div>
+  </form>
+</div>
 <div class="modal__geo">
   <div class="modal__geo_wrapper">
     <div class="modal__geo_header"></div>
@@ -1309,5 +1481,7 @@
 <script src="js/slick.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/script.js"></script>
+<script src="js/price.js"></script>
+<script src="js/fancybox.js"></script>
 </body>
 </html>

@@ -1,131 +1,227 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>WESTSTYLE</title>
-  <link rel="stylesheet" href="css/slick.css"/>
-  <link rel="stylesheet" href="css/style.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>WESTSTYLE</title>
+<link rel="stylesheet" href="css/slick.css"/>
+<link rel="stylesheet" href="css/style.min.css">
+<link rel="stylesheet" href="css/fancybox.css">
 </head>
 <body><div class="body__overlay"></div><div class="body__overlay-2"></div><div class="header__overlay"></div>
-  <header class="header">
-      <div class="header__absolute"></div>
-      <div class="container">
-          <nav class="header__nav_top">
-              <div class="header__geo">
-                  <div class="header__city"><a href="#" class="header__city_link">Выберите город</a></div>
-              </div>
-              <div class="header__info">
-                  <img src="icons/logo/logo.svg" alt="Logo" class="header__logo">
-                  <a href="tel:88004441562" class="header__tel">8 800 444 15 62</a>
-                  <button class="header__button">Заказать звонок</button>
-                  <button class="header__button media">Заказать</button>
-              </div>
-          </nav>
-          <nav class="header__nav_bottom">
-              <button class="header__burger" aria-label="Открыть меню">
-                <div>
-                  <svg viewBox="0 0 33 26" fill="#2F5A89" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect x="0" y="2" width="33" height="3.32" rx="1.66"/>
-                    <rect x="0" y="10.85" width="33" height="3.32" rx="1.66"/>
-                    <rect x="0" y="19.7" width="33" height="3.32" rx="1.66"/>
-                  </svg>
-                </div>
-                <a href="#" class="header__burger-link">Меню</a>
-              </button>
-              <ul class="header__nav-list">
-                <li class="header__nav-item">
-                  <button class="header__nav-dropbtn">
-                    <a class="header__nav-link" href="#"><div class="header__menu_icon"><span></span><span></span><span></span></div>Меню</a>
-                  </button>
-                  <div class="header__subnav_drop">
-                    <ul class="header__subnav-list container">
-                      <li class="header__subnav-item">
-                        <button class="header__subnav-dropbtn">
-                          <a class="header__subnav-link" href="#">Каталог</a>
-                        </button>
-                        <ul class="header__tosubnav_list">
-                          <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="#">Межкомнатные двери</a></li>
-                          <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="#">Входные двери</a></li>
-                          <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="#">Раздвижные системы</a></li>
-                          <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="#">Скрытые двери</a></li>
-                          <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="#">Перегородки</a></li>
-                          <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="#">Декоративные рейки</a></li>
-                          <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="#">Стеновые панели</a></li>
-                          <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="#">Декор</a></li>
-                          <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="#">Фурнитура</a></li>
-                        </ul>
-                        <span class="header__subnav-span"></span>
-                      </li>
-                      <li class="header__subnav-item"><a class="header__subnav-link" href="#">Акции</a><span class="header__subnav-span"></span></li>
-                      <li class="header__subnav-item"><a class="header__subnav-link" href="#">Покупателям</a><span class="header__subnav-span"></span></li>
-                      <li class="header__subnav-item"><a class="header__subnav-link" href="#">Дизайнерам</a><span class="header__subnav-span"></span></li>
-                      <li class="header__subnav-item"><a class="header__subnav-link" href="#">Компания</a><span class="header__subnav-span"></span></li>
-                      <li class="header__subnav-item"><a class="header__subnav-link" href="#">Где купить</a><span class="header__subnav-span"></span></li>
-                      <li class="header__subnav-item"><a class="header__subnav-link" href="#">Контакты</a><span class="header__subnav-span"></span></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="header__nav-item">
-                  <button class="header__nav-dropbtn">
-                    <a class="header__nav-link" href="#">Каталог</a>
-                  </button>
-                  <div class="header__subnav_drop">
-                    <ul class="header__subnav-list container">
-                      <li class="header__subnav-item">
-                        <button class="header__subnav-dropbtn">
-                          <a class="header__subnav-link" href="#">Межкомнатные двери</a>
-                        </button>
-                        <ul class="header__tosubnav_list">
-                          <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="#">Классические</a></li>
-                          <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="#">Современные</a></li>
-                        </ul>
-                        <span class="header__subnav-span"></span>
-                      </li>
-                      <li class="header__subnav-item"><a class="header__subnav-link" href="#">Входные двери</a><span class="header__subnav-span"></span></li>
-                      <li class="header__subnav-item"><a class="header__subnav-link" href="#">Раздвижные системы</a><span class="header__subnav-span"></span></li>
-                      <li class="header__subnav-item"><a class="header__subnav-link" href="#">Скрытые двери</a><span class="header__subnav-span"></span></li>
-                      <li class="header__subnav-item"><a class="header__subnav-link" href="#">Перегородки</a><span class="header__subnav-span"></span></li>
-                      <li class="header__subnav-item"><a class="header__subnav-link" href="#">Декоративные рейки</a><span class="header__subnav-span"></span></li>
-                      <li class="header__subnav-item"><a class="header__subnav-link" href="#">Стеновые панели</a><span class="header__subnav-span"></span></li>
-                      <li class="header__subnav-item"><a class="header__subnav-link" href="#">Декор</a><span class="header__subnav-span"></span></li>
-                      <li class="header__subnav-item"><a class="header__subnav-link" href="#">Фурнитура</a><span class="header__subnav-span"></span></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="header__nav-item">
-                  <button class="header__nav-dropbtn">
-                    <a class="header__nav-link" href="#">Покупателям</a>
-                  </button>
-                </li>
-                <li class="header__nav-item">
-                  <button class="header__nav-dropbtn">
-                    <a class="header__nav-link" href="#">Акции</a>
-                  </button>
-                </li>
-                <li class="header__nav-item">
-                  <button class="header__nav-dropbtn">
-                    <a class="header__nav-link" href="#">Где купить</a>
-                  </button>
-                </li>
-                <a href="tel:88004441562" class="header__tel-2">8 800 444 15 62</a>
-                <div class="header__social">
-                  <div class="header__social-vk"></div>
-                  <div class="header__social-tg"></div>
-                  <div class="header__social-wa"></div>
-                  <div class="header__social-v"></div>
-                  <div class="header__social-g"></div>
-                </div>
-              </ul>
-              <div class="header__icon-burger">
-                <div class="header__icon_wrapper header__icon_wrapper-1"><a href="#"><img src="icons/main_navbar/search.svg" alt="search"></a></div>
-                <div class="header__icon_wrapper header__icon_wrapper-2"><a href="#"><img src="icons/main_navbar/favourite.svg" alt="favourite"></a><span>1</span></div>
-                <div class="header__icon_wrapper header__icon_wrapper-3"><a href="#"><img src="icons/main_navbar/purchase.svg" alt="purchase"><span>0</span></a></div>
-              </div>
-            </nav>
+<header class="header">
+  <div class="header__absolute"></div>
+  <div class="container">
+    <nav class="header__nav_top">
+      <div class="header__geo">
+        <div class="header__city"><a href="#" class="header__city_link">Выберите город</a></div>
       </div>
-  </header>
+      <div class="header__info">
+        <img src="icons/logo/logo.svg" alt="Logo" class="header__logo">
+        <a href="tel:88004441562" class="header__tel">8 800 444 15 62</a>
+        <button class="header__button">Заказать звонок</button>
+        <button class="header__button media">Заказать</button>
+      </div>
+    </nav>
+    <nav class="header__nav_bottom">
+      <button class="header__burger" aria-label="Открыть меню">
+        <div>
+          <svg viewBox="0 0 33 26" fill="#2F5A89" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect x="0" y="2" width="33" height="3.32" rx="1.66"/>
+            <rect x="0" y="10.85" width="33" height="3.32" rx="1.66"/>
+            <rect x="0" y="19.7" width="33" height="3.32" rx="1.66"/>
+          </svg>
+        </div>
+        <div class="header__burger-link">Меню</div>
+      </button>
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <button class="header__nav-dropbtn">
+            <a class="header__nav-link" href="./"><div class="header__menu_icon"><span></span><span></span><span></span></div>Меню</a>
+          </button>
+          <div class="header__subnav_drop">
+            <ul class="header__subnav-list container">
+              <li class="header__subnav-item">
+                <button class="header__subnav-dropbtn">
+                  <a class="header__subnav-link" href="door.html">Каталог</a>
+                </button>
+                <ul class="header__tosubnav_list">
+                  <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="door.html">Каталог 1</a></li>
+                  <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="collection.html">Каталог 2</a></li>
+                  <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="collection-product.html">Товар</a></li>
+                  <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="fordesigners.html">Дизайнерам</a></li>
+                </ul>
+                <span class="header__subnav-span"></span>
+              </li>
+              <li class="header__subnav-item">
+                <button class="header__subnav-dropbtn">
+                  <a class="header__subnav-link" href="action.html">Покупателям</a>
+                </button>
+                <ul class="header__tosubnav_list">
+                  <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="delivery.html">Доставка и установка</a></li>
+                  <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="design.html">Дизайн-проекты</a></li>
+                  <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="frontdoor.html">Как выбрать</a></li>
+                  <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="glass.html">Стекла</a></li>
+                  <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="manager.html">Выездной менеджер</a></li>
+                  <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="organic.html">Органичное смешение стилей</a></li>
+                  <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="pay.html">Оплата и гарантии</a></li>
+                </ul>
+                <span class="header__subnav-span"></span>
+              </li>
+              <li class="header__subnav-item">
+                <button class="header__subnav-dropbtn">
+                  <a class="header__subnav-link" href="specstyle.html">Компания</a>
+                </button>
+                <ul class="header__tosubnav_list">
+                  <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="press-center.html">Пресс-центр</a></li>
+                  <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="reviews.html">Отзывы</a></li>
+                  <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="search.html">Поиск</a></li>
+                  <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="technology.html">Технология изготовления</a></li>
+                  <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="agreements.html">Соглашения</a></li>
+                  <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="404.html">Ошибка 404</a></li>
+                  <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="contacts.html">Контакты</a></li>
+                </ul>
+                <span class="header__subnav-span"></span>
+              </li>
+              <li class="header__subnav-item">
+                <button class="header__subnav-dropbtn">
+                  <a class="header__subnav-link" href="action.html">Акции</a>
+                </button>
+                <ul class="header__tosubnav_list">
+                  <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="action-product.html">Акция на продукт</a></li>
+                </ul>
+                <span class="header__subnav-span"></span>
+              </li>
+              <li class="header__subnav-item"><a class="header__subnav-link" href="shops.html">Где купить</a><span class="header__subnav-span"></span></li>
+            </ul>
+          </div>
+        </li>
+        <li class="header__nav-item">
+          <button class="header__nav-dropbtn">
+            <a class="header__nav-link" href="door.html">Каталог</a>
+          </button>
+          <div class="header__subnav_drop">
+            <ul class="header__subnav-list container">
+              <li class="header__subnav-item">
+                <button class="header__subnav-dropbtn">
+                  <a class="header__subnav-link" href="door.html">Каталог 1</a>
+                </button>
+                <ul class="header__tosubnav_list">
+                  <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="./">третий уровень</a></li>
+                </ul>
+                <span class="header__subnav-span"></span>
+              </li>
+              <li class="header__subnav-item">
+                <button class="header__subnav-dropbtn">
+                  <a class="header__subnav-link" href="collection.html">Каталог 2</a>
+                </button>
+                <ul class="header__tosubnav_list">
+                  <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="./">третий уровень</a></li>
+                </ul>
+                <span class="header__subnav-span"></span>
+              </li>
+              <li class="header__subnav-item">
+                <button class="header__subnav-dropbtn">
+                  <a class="header__subnav-link" href="collection-product.html">Товар</a>
+                </button>
+                <ul class="header__tosubnav_list">
+                  <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="./">третий уровень</a></li>
+                </ul>
+                <span class="header__subnav-span"></span>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="header__nav-item">
+          <button class="header__nav-dropbtn">
+            <a class="header__nav-link" href="delivery.html">Покупателям</a>
+          </button>
+          <div class="header__subnav_drop">
+            <ul class="header__subnav-list container">
+              <li class="header__subnav-item">
+                <button class="header__subnav-dropbtn">
+                  <a class="header__subnav-link" href="delivery.html">Доставка и установка</a>
+                </button>
+                <ul class="header__tosubnav_list">
+                  <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="./">третий уровень</a></li>
+                </ul>
+                <span class="header__subnav-span"></span>
+              </li>
+              <li class="header__subnav-item"><a class="header__subnav-link" href="design.html">Дизайн-проекты</a><span class="header__subnav-span"></span></li>
+              <li class="header__subnav-item">
+                <button class="header__subnav-dropbtn">
+                  <a class="header__subnav-link" href="frontdoor.html">Как выбрать</a>
+                </button>
+                <ul class="header__tosubnav_list">
+                  <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="./">третий уровень</a></li>
+                </ul>
+                <span class="header__subnav-span"></span>
+              </li>
+              <li class="header__subnav-item"><a class="header__subnav-link" href="glass.html">Стекла</a><span class="header__subnav-span"></span></li>
+              <li class="header__subnav-item"><a class="header__subnav-link" href="manager.html">Выездной менеджер</a><span class="header__subnav-span"></span></li>
+              <li class="header__subnav-item"><a class="header__subnav-link" href="organic.html">Органичное смешение стилей</a><span class="header__subnav-span"></span></li>
+              <li class="header__subnav-item"><a class="header__subnav-link" href="pay.html">Оплата и гарантии</a><span class="header__subnav-span"></span></li>
+            </ul>
+          </div>
+        </li>
+        <li class="header__nav-item">
+          <button class="header__nav-dropbtn">
+            <a class="header__nav-link" href="specstyle.html">Компания</a>
+          </button>
+          <div class="header__subnav_drop">
+            <ul class="header__subnav-list container">
+              <li class="header__subnav-item">
+                <button class="header__subnav-dropbtn">
+                  <a class="header__subnav-link" href="press-center.html">Пресс-центр</a>
+                </button>
+                <ul class="header__tosubnav_list">
+                  <li class="header__tosubnav-item"><a class="header__tosubnav-link" href="./">третий уровень</a></li>
+                </ul>
+                <span class="header__subnav-span"></span>
+              </li>
+              <li class="header__subnav-item"><a class="header__subnav-link" href="reviews.html">Отзывы</a><span class="header__subnav-span"></span></li>
+              <li class="header__subnav-item"><a class="header__subnav-link" href="search.html">Поиск</a><span class="header__subnav-span"></span></li>
+              <li class="header__subnav-item"><a class="header__subnav-link" href="technology.html">Технология изготовления</a><span class="header__subnav-span"></span></li>
+              <li class="header__subnav-item"><a class="header__subnav-link" href="fordesigners.html">Дизайнерам</a><span class="header__subnav-span"></span></li>
+              <li class="header__subnav-item"><a class="header__subnav-link" href="agreements.html">Соглашения</a><span class="header__subnav-span"></span></li>
+              <li class="header__subnav-item"><a class="header__subnav-link" href="404.html">Ошибка 404</a><span class="header__subnav-span"></span></li>
+              <li class="header__subnav-item"><a class="header__subnav-link" href="contacts.html">Контакты</a><span class="header__subnav-span"></span></li>
+            </ul>
+          </div>
+        </li>
+        <li class="header__nav-item">
+          <button class="header__nav-dropbtn">
+            <a class="header__nav-link" href="action.html">Акции</a>
+          </button>
+          <div class="header__subnav_drop">
+            <ul class="header__subnav-list container">
+              <li class="header__subnav-item"><a class="header__subnav-link" href="action-product.html">Акция на продукт</a><span class="header__subnav-span"></span></li>
+            </ul>
+          </div>
+        </li>
+        <li class="header__nav-item">
+          <button class="header__nav-dropbtn">
+            <a class="header__nav-link" href="shops.html">Где купить</a>
+          </button>
+        </li>
+        <a href="tel:88004441562" class="header__tel-2">8 800 444 15 62</a>
+        <div class="header__social">
+          <div class="header__social-vk"></div>
+          <div class="header__social-tg"></div>
+          <div class="header__social-wa"></div>
+          <div class="header__social-v"></div>
+          <div class="header__social-g"></div>
+        </div>
+      </ul>
+      <div class="header__icon-burger">
+        <div class="header__icon_wrapper header__icon_wrapper-1"><a href="search.html"><img src="icons/main_navbar/search.svg" alt="search"></a></div>
+        <div class="header__icon_wrapper header__icon_wrapper-2"><a data-fancybox href="#form_price"><img src="icons/main_navbar/favourite.svg" alt="favourite"></a><span>1</span></div>
+        <div class="header__icon_wrapper header__icon_wrapper-3"><a data-fancybox href="#form_cart"><img src="icons/main_navbar/purchase.svg" alt="purchase"><span>0</span></a></div>
+      </div>
+    </nav>
+  </div>
+</header>
   <section class="gray">
     <div class="gray__slider">
       <div class="gray__block">
@@ -435,6 +531,177 @@
       </div>
     </div>
   </div>
+  <div style="display:none" id="form_price" class="modal-fancy">
+    <form class="modal__form-white"> 
+      <div class="modal__form-white-head-flex">Узнать цену<span data-fancybox-close="" class="modal__form-close"></span></div>
+      <div class="modal__form-white-flex">
+        <div class="modal__form-white_img"><img src="img/products/PRIME 5.jpg" alt="" class="modal__form-white_image"></div>
+        <div class="modal__form-white_desc">
+          <div class="modal__form-white_head">
+            Межкомнатная дверь PRIME 5
+          </div>
+          <ul class="modal__form-white_list">
+            <li class="modal__form-white_item">
+              <div class="modal__form-white_item-head">Покрытие:</div>
+              <div class="modal__form-white_item-desc">NCS S 6030-B</div>
+            </li>
+            <li class="modal__form-white_item">
+              <div class="modal__form-white_item-head">Количество створок:</div>
+              <div class="modal__form-white_item-desc">1</div>
+            </li>
+            <li class="modal__form-white_item">
+              <div class="modal__form-white_item-head">Оформление портала:</div>
+              <div class="modal__form-white_item-selects"><img src="img/products/PRIME 5.jpg" alt=""></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal__form-white_group">      
+        <input class="modal__form-white_input" placeholder="Имя*" type="text" required="">
+        <span class="modal__form-white_bar"></span>
+      </div>
+      <div class="modal__form-white_group">      
+        <input class="modal__form-white_input" type="tel" required="" placeholder="Номер телефона*" pattern="^\+7\d{3}\d{7}$" maxlength="12" onclick="value='+7'">
+        <span class="modal__form-white_bar"></span>
+      </div>
+        <button class="modal__form-white_btn">
+          Получить консультацию
+        </button>
+        <div class="modal__form-white_policy">
+          <a href="#">Нажимая на кнопку вы соглашаетесь<br>с Политикой обработки персональных данных</a>
+      </div>
+    </form>
+  </div>
+  <div style="display:none" id="form_cart" class="modal-fancy">
+    <form class="modal__form-white">
+      <div class="modal__form-white-head-flex">Корзина<span data-fancybox-close="" class="modal__form-close"></span></div>
+      <div class="modal__form-white-head-desc">3 товаров на сумму 110 997 ₽</div>
+      <div class="modal__form-white-flex">
+        <div class="modal__form-white_img"><img src="img/products/PRIME 5.jpg" alt="" class="modal__form-white_image"></div>
+        <div class="modal__form-white_desc">
+          <div class="modal__form-white_head">
+            Межкомнатная дверь PRIME 5<span></span>
+          </div>
+          <ul class="modal__form-white_list">
+            <li class="modal__form-white_item">
+              <div class="modal__form-white_item-head">Покрытие:</div>
+              <div class="modal__form-white_item-desc">NCS S 6030-B</div>
+            </li>
+            <li class="modal__form-white_item">
+              <div class="modal__form-white_item-head">Длина:</div>
+              <div class="modal__form-white_item-desc">200</div>
+            </li>
+            <li class="modal__form-white_item">
+              <div class="modal__form-white_item-head">Ширина:</div>
+              <div class="modal__form-white_item-desc">60</div>
+            </li>
+            <li class="modal__form-white_item">
+              <div class="modal__form-white_item-head">Высота:</div>
+              <div class="modal__form-white_item-desc">1800</div>
+            </li>
+            <li class="modal__form-white_item">
+              <div class="modal__form-white_item-head">Количество створок:</div>
+              <div class="modal__form-white_item-desc">1</div>
+            </li>
+            <li class="modal__form-white_item">
+              <div class="modal__form-white_item-head">Оформление портала:</div>
+              <div class="modal__form-white_item-selects"><img src="img/products/PRIME 5.jpg" alt=""></div>
+            </li>
+            <li class="modal__form-white_item">
+              <div class="modal__form-white_item-head">Цвет:</div>
+              <div class="modal__form-white_item-selects"><img src="img/products/prime_1.jpg" alt=""></div>
+            </li>
+          </ul>
+          <div class="modal__form-white_price-flex">
+            <div class="modal__form-white_price">
+              от 36 999 ₽ <span class="modal__form-white_price-strike">40 000 ₽</span> 
+            </div>
+            <div class="modal__form-plus-minus">
+              <input type="text" name="quantity" value="1">
+              <div class="inc qtybutton">-</div><div class="dec qtybutton">+</div><div class="modal__form-plus-minus-piece">шт</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal__form-white_divider"></div>
+      <div class="modal__form-white-flex">
+        <div class="modal__form-white_img"><img src="img/products/PRIME 5.jpg" alt="" class="modal__form-white_image"></div>
+        <div class="modal__form-white_desc">
+          <div class="modal__form-white_head">
+            Межкомнатная дверь PRIME 5<span></span>
+          </div>
+          <ul class="modal__form-white_list">
+            <li class="modal__form-white_item">
+              <div class="modal__form-white_item-head">Покрытие:</div>
+              <div class="modal__form-white_item-desc">NCS S 6030-B</div>
+            </li>
+            <li class="modal__form-white_item">
+              <div class="modal__form-white_item-head">Длина:</div>
+              <div class="modal__form-white_item-desc">200</div>
+            </li>
+            <li class="modal__form-white_item">
+              <div class="modal__form-white_item-head">Ширина:</div>
+              <div class="modal__form-white_item-desc">60</div>
+            </li>
+            <li class="modal__form-white_item">
+              <div class="modal__form-white_item-head">Высота:</div>
+              <div class="modal__form-white_item-desc">1800</div>
+            </li>
+            <li class="modal__form-white_item">
+              <div class="modal__form-white_item-head">Количество створок:</div>
+              <div class="modal__form-white_item-desc">1</div>
+            </li>
+            <li class="modal__form-white_item">
+              <div class="modal__form-white_item-head">Оформление портала:</div>
+              <div class="modal__form-white_item-selects"><img src="img/products/PRIME 5.jpg" alt=""></div>
+            </li>
+            <li class="modal__form-white_item">
+              <div class="modal__form-white_item-head">Цвет:</div>
+              <div class="modal__form-white_item-selects"><img src="img/products/prime_1.jpg" alt=""></div>
+            </li>
+          </ul>
+          <div class="modal__form-white_price-flex">
+            <div class="modal__form-white_price">
+              от 36 999 ₽ <span class="modal__form-white_price-strike">40 000 ₽</span> 
+            </div>
+            <div class="modal__form-plus-minus">
+              <input type="text" name="quantity" value="1">
+              <div class="inc qtybutton">-</div><div class="dec qtybutton">+</div><div class="modal__form-plus-minus-piece">шт</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal__form-white_divider"></div>
+      <div class="modal__form-white_group">
+        <input class="modal__form-white_input" placeholder="ФИО*" type="text" required="">
+        <span class="modal__form-white_bar"></span>
+      </div>
+      <div class="modal__form-white_group">
+        <input class="modal__form-white_input" type="tel" required="" placeholder="Телефон*" pattern="^\+7\d{3}\d{7}$" maxlength="12" onclick="value='+7'">
+        <span class="modal__form-white_bar"></span>
+      </div>
+      <div class="modal__form-white_group">
+        <input class="modal__form-white_input" placeholder="Email" type="email">
+        <span class="modal__form-white_bar"></span>
+      </div>
+      <div class="modal__form-white_group">
+        <input class="modal__form-white_input" placeholder="Адрес доставки" type="text">
+        <span class="modal__form-white_bar"></span>
+      </div>
+      <div class="modal__form-white_group-2">
+        <textarea class="modal__form-white_textarea" placeholder="Комментарии"></textarea>
+      </div>
+      <div class="modal__form-white_sum">
+        <span>Итого:</span> 110 997 ₽
+      </div>
+        <button class="modal__form-white_btn">
+          Оформить заказ
+        </button>
+        <div class="modal__form-white_policy">
+          <a href="#">Нажимая на кнопку вы соглашаетесь<br>с Политикой обработки персональных данных</a>
+      </div>
+    </form>
+  </div>
   <div class="modal__geo">
     <div class="modal__geo_wrapper">
       <div class="modal__geo_header"></div>
@@ -444,10 +711,11 @@
       </div>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha384-i61gTtaoovXtAbKjo903+O55Jkn2+RtzHtvNez+yI49HAASvznhe9sZyjaSHTau9" crossorigin="anonymous"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/price.js"></script>
-</body>
-</html>
+  <script src="js/fancybox.js"></script>
+  </body>
+  </html>
