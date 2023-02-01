@@ -7,6 +7,7 @@
   <title>WESTSTYLE</title>
   <link rel="stylesheet" href="css/slick.css"/>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/fancybox.css">
 </head>
 <body><div class="body__overlay"></div><div class="body__overlay-2"></div><div class="header__overlay"></div>
   <header class="header">
@@ -140,7 +141,7 @@
               </ul>
               <div class="gray__flex">
                 <h1 class="gray__header">Отзывы</h1>
-                <a href="" class="gray__button-link"><button class="gray__button">Оставить отзыв</button></a>
+                <a data-fancybox href="#form_reviews" class="gray__button-link"><button class="gray__button">Оставить отзыв</button></a>
               </div>
             </div>
           </div>
@@ -471,6 +472,43 @@
       </div>
     </div>
   </div>
+  <div style="display:none" id="form_reviews" class="modal-fancy">
+    <form class="modal__form">
+      <span data-fancybox-close="" class="modal__form-close"></span>
+      <h4 class="modal__form_head">Оставить отзыв</h4>
+      <div class="modal__form_group">
+        <input class="modal__form_input" placeholder="Имя" type="text" required="">
+        <span class="modal__form_bar"></span>
+      </div>
+      <div class="modal__form_group">
+        <input class="modal__form_input" type="tel" required="" placeholder="+7 (000) 000 00-00" pattern="^\+7\d{3}\d{7}$" maxlength="12" onclick="value='+7'">
+        <span class="modal__form_bar"></span>
+      </div>
+      <div class="modal__form_group">
+        <input class="modal__form_input" type="tel" placeholder="Введите город">
+        <span class="modal__form_bar"></span>
+      </div>
+      <div class="modal__form_group-2">
+        <textarea class="modal__form_social" placeholder="Ссылка на соцсети"></textarea>
+      </div>
+      <div class="modal__form_group-2">
+        <textarea class="modal__form_textarea" placeholder="Сообщение"></textarea>
+      </div>
+      <div class="modal__form_group-2">
+        <input name="file" type="file" id="input__file" class="modal__form_file-input" multiple>
+        <label for="input__file" class="input__file-button">
+          <span class="modal__form_file-img"></span>
+          <span class="modal__form_file-text">Прикрепить файлы</span>
+        </label>
+      </div>
+        <button class="modal__form_btn">
+          Получить консультацию
+        </button>
+        <div class="modal__form_policy">
+          <a href="#">Нажимая на кнопку вы соглашаетесь<br>с Политикой обработки персональных данных</a>
+      </div>
+    </form>
+  </div>
   <div class="modal__geo">
     <div class="modal__geo_wrapper">
       <div class="modal__geo_header"></div>
@@ -485,5 +523,6 @@
   <script src="js/wow.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/price.js"></script>
+  <script src="js/fancybox.js"></script>
 </body>
 </html>

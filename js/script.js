@@ -934,22 +934,26 @@ for(var i = 0; i < objs_list_li.length; i++){
 };
 
 $( window ).resize(function() {
-  if ($(window).width() < 1041) {
+  if ($(window).width() < 1201) {
     $(".header__tosubnav_list").css("display", "none");
     $(".header__subnav_drop").css("display", "none");
+    $(".header__nav-item").removeClass("open");
+    $(".header__subnav-item").removeClass("open");
   }
-  if ($(window).width() > 1040) {
+  if ($(window).width() > 1200) {
     $(".header__tosubnav_list").css("display", "block");
     $(".header__subnav_drop").css("display", "block");
     document.querySelector('.header').classList.remove("header-open");
   }
 });
 $( window ).width(function() {
-  if ($(window).width() < 1041) {
+  if ($(window).width() < 1201) {
     $(".header__tosubnav_list").css("display", "none");
     $(".header__subnav_drop").css("display", "none");
+    $(".header__nav-item").removeClass("open");
+    $(".header__subnav-item").removeClass("open");
   }
-  if ($(window).width() > 1040) {
+  if ($(window).width() > 1200) {
     $(".header__tosubnav_list").css("display", "block");
     $(".header__subnav_drop").css("display", "block");
     document.querySelector('.header').classList.remove("header-open");
@@ -1462,4 +1466,21 @@ $(".press-center__button-video").click(function() {
   $(".press-center__video").addClass("showcopied");
   $(".press-center__blog").removeClass("showcopied");
   $(".press-center__news").removeClass("showcopied");
+});
+
+let inputs = document.querySelectorAll('.modal__form_file-input');
+Array.prototype.forEach.call(inputs, function (input) {
+  let label = input.nextElementSibling,
+    labelVal = label.querySelector('.modal__form_file-text').innerText;
+
+  input.addEventListener('change', function (e) {
+    let countFiles = '';
+    if (this.files && this.files.length >= 1)
+      countFiles = this.files.length;
+
+    if (countFiles)
+      label.querySelector('.modal__form_file-text').innerText = 'Выбрано файлов: ' + countFiles;
+    else
+      label.querySelector('.modal__form_file-text').innerText = labelVal;
+  });
 });
