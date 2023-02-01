@@ -757,7 +757,7 @@ body .header__menu_modal.active{overflow-y:hidden}
 .search__form{display:flex;}
 .search__button{display:flex;justify-content:center;padding:17px 62px;min-width:230px;color:#fff;background:#5BC3CF;font-weight:700;font-size:20px;line-height:140%;border-radius:6px;}
 .search__group{width:100%;position:relative;margin-right:30px;border-bottom:1px solid #ccc;}
-.search__input{width:100%;padding:17px 28px 14px 20px;display:block;border:none;font-family:'Montserrat',sans-serif;font-weight:600;font-size:22px;line-height:140%;color:#3C3C48;}
+.search__input{width:100%;padding:17px 28px 14px 20px;display:block;border:none;font-family:'Montserrat',sans-serif;font-weight:600;font-size:22px;line-height:140%;color:#3C3C48;background:transparent;}
 .search__input:focus{outline:none;}
 .search__label{font-family:'Montserrat',sans-serif;font-weight:600;font-size:22px;line-height:140%;color:#ccc;position:absolute;pointer-events:none;left:20px;top:17px;transition:0.3s ease all;-moz-transition:0.3s ease all;-webkit-transition:0.3s ease all;}
 .search__input:focus ~ .search__label,.search__input:valid ~ .search__label{top:-20px;left:0;font-size:14px;}
