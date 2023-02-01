@@ -20,8 +20,8 @@
       <div class="header__info">
         <img src="icons/logo/logo.svg" alt="Logo" class="header__logo">
         <a href="tel:88004441562" class="header__tel">8 800 444 15 62</a>
-        <button class="header__button">Заказать звонок</button>
-        <button class="header__button media">Заказать</button>
+        <button data-fancybox href="#form_cal" class="header__button">Заказать звонок</button>
+        <button data-fancybox href="#form_cal" class="header__button media">Заказать</button>
       </div>
     </nav>
     <nav class="header__nav_bottom">
@@ -806,6 +806,27 @@
           Оформить заказ
         </button>
         <div class="modal__form-white_policy">
+          <a href="#">Нажимая на кнопку вы соглашаетесь<br>с Политикой обработки персональных данных</a>
+      </div>
+    </form>
+  </div>
+  <div style="display:none" id="form_cal" class="modal-fancy">
+    <form class="modal__form"> 
+      <span data-fancybox-close="" class="modal__form-close"></span>
+      <h4 class="modal__form_head">Заказать консультацию</h4>
+      <p class="modal__form_desc">Оставьте свои данные и мы свяжемся с вами в ближайшее время</p>
+      <div class="modal__form_group">      
+        <input class="modal__form_input" placeholder="Имя" type="text" required="">
+        <span class="modal__form_bar"></span>
+      </div>
+      <div class="modal__form_group">      
+        <input class="modal__form_input" type="tel" required="" placeholder="+7 (000) 000 00-00" pattern="^\+7\d{3}\d{7}$" maxlength="12" onclick="value='+7'">
+        <span class="modal__form_bar"></span>
+      </div>
+        <button class="modal__form_btn">
+          Получить консультацию
+        </button>
+        <div class="modal__form_policy">
           <a href="#">Нажимая на кнопку вы соглашаетесь<br>с Политикой обработки персональных данных</a>
       </div>
     </form>
